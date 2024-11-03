@@ -33,7 +33,7 @@ const CandidateSearch = () => {
   }, []);
 
   const saveCandidate = () => {
-    const candidateToSave = candidates[currentCandidateIndex];
+    const candidateToSave:Candidate = candidateInView;
     setSavedCandidates((prev: Candidate[]) => {
       const updated = [...prev, candidateToSave];
       localStorage.setItem('savedCandidates', JSON.stringify(updated));
@@ -53,12 +53,17 @@ const CandidateSearch = () => {
   useEffect(() => {
     if (currentCandidate) {
       const fetchCandidate = async () => {
+        try{
         const data = await searchGithubUser(currentCandidate.login);
         setCandidate(data);
+        }
+        catch (err){
+          console.log(err);
+        }
       };
       fetchCandidate();
     }
-  },
+  }, 
 
   );
 
@@ -66,7 +71,7 @@ const CandidateSearch = () => {
     <div>
       <main>
         <h1>CandidateSearch</h1>
-        {currentCandidate && (
+        {currentCandidate ? (
           <div className='candidate-card'>
             <img src={candidateInView.avatar_url} alt={candidateInView.login} />
             <h2>{candidateInView.login}</h2>
@@ -75,14 +80,17 @@ const CandidateSearch = () => {
             <p>Company: {candidateInView.company}</p>
             <p>Bio: {candidateInView.bio}</p>
           </div>
-        )}
+        ) : (
+          <p className='noneSelected'>No More Candidates Available</p>
+        )
+      }
         <footer>
           <button className='minus' onClick={nextCandidate}>-</button>
           <button className='plus' onClick={saveCandidate}>+</button>
         </footer>
       </main>
       {savedCandidates.length === 0 && (
-        <p>No candidates have been accepted.</p>
+        <p className='noneSelected'>No candidates have been accepted.</p>
       )}
     </div>
   );
