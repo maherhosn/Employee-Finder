@@ -30,7 +30,7 @@ body {
     rgba(0, 2, 18, 1) 100%
   );
   background-size: cover;
-  background-repeat: no-repeat no-repeat;
+  /* background-repeat: no-repeat no-repeat; */
   background-position: center center;
   margin: 0;
   place-items: center;
@@ -44,15 +44,17 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 50%;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.6em 1em;
+  font-size: 20px;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-inline:10rem;
+  color: black;
 }
 button:hover {
   border-color: #646cff;
@@ -61,6 +63,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.plus {
+background-color: green;
+}
+.minus {
+  background-color: red;
+  }
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -78,10 +86,12 @@ button:focus-visible {
 main {
   color: #fff;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 5em;
 }
 
 tr {
@@ -108,6 +118,7 @@ tbody tr:nth-child(odd) {
 .nav-link {
   color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
 .active {
@@ -117,4 +128,13 @@ tbody tr:nth-child(odd) {
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+.candidate-card img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.candidate-card{
+  border-radius: 20px;
+ background-color: black;
+
 }

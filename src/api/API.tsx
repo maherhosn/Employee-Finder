@@ -4,14 +4,15 @@ const searchGithub = async () => {
     // console.log(import.meta.env);
     const response = await fetch(
       `https://api.github.com/users?since=${start}`,
-      {
-        headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-        },
-      }
+      // {
+      //   headers: {
+      //     Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+      //   },
+      // }
     );
     // console.log('Response:', response);
     const data = await response.json();
+    // console.log("this is my response" + JSON.stringify(data));
     if (!response.ok) {
       throw new Error('invalid API response, check the network tab');
     }
