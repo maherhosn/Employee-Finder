@@ -49,7 +49,6 @@ const CandidateSearch = () => {
   };
 
   const currentCandidate: Candidate = candidates[currentCandidateIndex]; // Ensure this is defined correctly
-
   useEffect(() => {
     if (currentCandidate) {
       const fetchCandidate = async () => {
@@ -63,9 +62,7 @@ const CandidateSearch = () => {
       };
       fetchCandidate();
     }
-  }, 
-
-  );
+  }, [currentCandidateIndex]);
 
   return (
     <div>
