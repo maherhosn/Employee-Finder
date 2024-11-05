@@ -13,7 +13,8 @@ Employee Finder is an app that searches for potential employees listed on Github
 
 ## Installation Guide:
 Clone the repository to your computer, make sure you have node installed.<br>Afte clone is completed, open a bash terminal & install the requireed npm "node modules" using the command <br>"npm i"<br>you will know that npm is installed properly by seeing the (node module) directories in the desired folders.<br>After the installation is completed, start the program by typing<br>"npm run dev"<br>This will start the website where you can browse my portfolio on your own computer<br>You can also check the live version of the website by clicking the following link:<br>[Employee-Finder]( https://gitemployeefinder.netlify.app/)
-
+https://github.com/maherhosn/Employee-Finder/blob/main/images/01-candidate_search_homepage.png
+https://github.com/maherhosn/Employee-Finder/blob/main/images/02-candidate_search_potential_candidates.png
 ## Usage: 
 You can navigate through the site by trying the following scenarios:<br>- Click the red button to skip the candidate in view and go to the next candidate.<br> click on the green button to save the potential candidate and view them in a table at a later date.<br> The navigation tabs at the top will allow you to go the “Potential Candidates” page or the Home page
 
