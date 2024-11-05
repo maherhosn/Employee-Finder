@@ -68,7 +68,7 @@ const CandidateSearch = () => {
     <div>
       <main>
         <h1>CandidateSearch</h1>
-        {currentCandidate ? (
+        {currentCandidateIndex < candidates.length ? (
           <div className='candidate-card'>
             <img src={candidateInView.avatar_url} alt={candidateInView.login} />
             <h2>{candidateInView.login}</h2>

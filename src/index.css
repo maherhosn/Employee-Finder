@@ -18,70 +18,70 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    rgb(32, 44, 136) 0%,
-    rgba(9, 9, 121, 1) 15%,
-    rgba(0, 2, 18, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgb(32, 44, 136) 0%,
+      rgba(9, 9, 121, 1) 15%,
+      rgba(0, 2, 18, 1) 100%);
   background-size: cover;
-  /* background-repeat: no-repeat no-repeat; */
+  background-repeat: no-repeat no-repeat;
   background-position: center center;
-  margin: 0;
+  margin: 20px;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2em;
+  line-height: 1;
 }
 
 button {
   border-radius: 50%;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   padding: 0.6em 1em;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-inline:7rem;
+  display: fixed;
+  margin-inline: 50px;
   color: black;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 .plus {
-background-color: green;
+  background-color: green;
 }
+
 .minus {
   background-color: red;
-  }
+}
 
-tr img{
-width: 25%;
-  }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -90,60 +90,65 @@ width: 25%;
 main {
   color: #fff;
   width: 100%;
-  min-height: 90vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 5em;
 }
 
 tr {
-  border-radius: 10px;
+  border-radius: 0px;
   background-color: #000;
   color: white;
-  font-size: large;
+  font-size: medium;
+}
+
+tr img {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  margin-left:40%;
 }
 
 tbody tr:nth-child(odd) {
   background-color: #333333;
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-start;
-  padding: 1em 2em;
-}
-
-.nav-item {
-  padding: 0 0.5rem;
-  list-style: none;
-}
-
 .nav-link {
+  display: fixed;
   color: #fff;
   text-decoration: none;
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
+  justify-content: flex-start;
+
 }
 
 .active {
   font-weight: 700;
+  background-color: forestgreen;
 }
 
 .table {
-  width: 80vw;
-  table-layout: fixed;
+  width: 100vw;
+  table-layout: auto;
 }
-.candidate-card img{
+
+.candidate-card img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  width: 100%;
 }
-.candidate-card{
+
+.candidate-card {
   border-radius: 20px;
- background-color: black;
+  background-color: black;
+  width: 50%;
 }
-.noneSelected{
+
+.noneSelected {
   font-size: xx-large;
   background-color: maroon;
 }
