@@ -1,33 +1,36 @@
-# React + TypeScript + Vite
+# Employee-Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
+Employee Finder is an app that searches for potential employees listed on Github<br>This application connects to Github using an API, and fetches a list of employees written in XML format<br>After the list is returned, the application formats the response into a readable front-end web design that allows the user to search through the list of candidates, select the potential candidates, save them to local storage, and view them in a table format where they can be kept or removed from the list.<br> The below images show a sample of how the site looks like.
 
-Currently, two official plugins are available:
+## Table Of Contents:
+- [Installation Guide](#installation-guide)
+- [Usage](#usage)
+-	[License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation Guide:
+Clone the repository to your computer, make sure you have node installed.<br>Afte clone is completed, open a bash terminal & install the requireed npm "node modules" using the command <br>"npm i"<br>you will know that npm is installed properly by seeing the (node module) directories in the desired folders.<br>After the installation is completed, start the program by typing<br>"npm run dev"<br>This will start the website where you can browse my portfolio on your own computer<br>You can also check the live version of the website by clicking the following link:<br>[Employee-Finder]( https://gitemployeefinder.netlify.app/)
 
-## Expanding the ESLint configuration
+## Usage: 
+You can navigate through the site by trying the following scenarios:<br>- Click the red button to skip the candidate in view and go to the next candidate.<br> click on the green button to save the potential candidate and view them in a table at a later date.<br> The navigation tabs at the top will allow you to go the “Potential Candidates” page or the Home page
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Licence: <br>
+### MIT <br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br>
+https://opensource.org/licenses/MIT
 
-* Configure the top-level `parserOptions` property as follows:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Contributing:
+No Contributions can be made to this code!
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## Tests:
+scroll through the entire list of candidates and a message will pop informing you that there are no more potential candidates to view.<br>A message should also appear if no candidates have been selected yet.<br>Another test would be to check the console log for errors.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Questions:
+If you have any question please contact: <br>
+name: maherhosn <br>
+email: maherhosn@hotmail.com
+  
